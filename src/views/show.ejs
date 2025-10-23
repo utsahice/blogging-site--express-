@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= post.title %></title>
+  </head>
+  <body>
+    <h1><%= post.title %></h1>
+    <p><%= post.content %></p>
+
+    <a href="/posts/<%= post.id %>/edit">Edit</a>
+
+    <form
+      action="/posts/<%= post.id %>/delete"
+      method="POST"
+      style="display: inline">
+      <button type="submit">Delete</button>
+    </form>
+
+    <br /><br />
+    <a href="/">Back to Home</a>
+  </body>
+</html>
