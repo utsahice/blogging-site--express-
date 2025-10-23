@@ -44,7 +44,10 @@ app.post("/posts/:id/edit", (req, res) => {
   post.content = req.body.content;
   res.redirect("/");
 });
-
+app.post("/posts/:id/delete" , (req,res)=>{
+    posts= posts.filter((p)=>p.id != req.params.id);
+    res.redirect("/");
+});
 app.post("/posts/:id/delete", (req, res) => {
   posts = posts.filter((p) => p.id != req.params.id);
   res.redirect("/");
