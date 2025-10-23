@@ -47,6 +47,7 @@ app.post('/posts/:id/edit', (req, res) => {
 })
 app.post('/posts/:id/delete', (req, res) => {
   posts = posts.filter((p) => p.id != req.params.id)
+  // res.status(200).send(`Item with ID ${req.params.id} deleted.`);
   res.redirect('/')
 })
 
