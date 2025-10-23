@@ -15,6 +15,11 @@ let posts = [
 app.get('/', (req, res) => {
   res.render('index', { posts })
 })
+app.get('/', (req, res) => {
+  res.render('index', { posts })
+})
+
+
 app.get('/new', (req, res) => {
   res.render('new')
 })
