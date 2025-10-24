@@ -8,6 +8,7 @@
     "build:css": "postcss src/style/style.css -o public/style/style.css",
     "watch:css": "postcss src/style/style.css -o public/style/style.css --watch"
   },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
