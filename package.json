@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --write \"src/**/*.{js,jsx}\""
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "build:css": "postcss src/style/style.css -o public/style/style.css",
+    "watch:css": "postcss src/style/style.css -o public/style/style.css --watch"
   },
   "keywords": [],
   "author": "",
@@ -20,7 +22,11 @@
     "express": "^5.1.0"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.21",
     "nodemon": "^3.1.10",
-    "prettier": "^3.6.2"
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "prettier": "^3.6.2",
+    "tailwindcss": "^3.4.18"
   }
 }
